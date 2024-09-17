@@ -18,7 +18,7 @@ import javax.accessibility.AccessibleIcon;
  * Experiments with ASCII blocks.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Ben Sheeley, Leo Goldman
  */
 public class Blocks {
   /**
@@ -105,6 +105,11 @@ public class Blocks {
     AsciiBlock.print(pen, new HorizontalCompositionTop(ohs, exes));
     separator(pen);
     AsciiBlock.print(pen, new HorizontalCompositionTop(exes, exes));
+    separator(pen);
+
+    AsciiBlock.print(pen, new HorizontalCompositionTop(b7, ohs));
+
+
 
     pen.close();
   } // main(String[])
